@@ -1,0 +1,19 @@
+div(class="left-container")
+  div(class="tabs highlighted" id="getAll" onclick="updateSelected('getAll')")
+    span(class="get") GET
+    span /warriors
+  div(class="tabs" id="getType" onclick="updateSelected('getType')")
+    span(class="get") GET
+    span /type/{typeId}
+
+  div(class="tabs" id="getWarriorsById" onclick="updateSelected('getWarriorsById')")
+    span(class="get") GET
+    span /warriors/{warriorsId}
+
+  div(class="tabs" id="postWarriors" onclick="updateSelected('postWarriors')")
+    span(class="post") POST
+    span /warriors
+
+  div(class="tabs" id="deleteWarriorsById" onclick="updateSelected('deleteWarriorsById')")
+    span(class="delete") DELETE
+    span /warriors/{warriorsId}
