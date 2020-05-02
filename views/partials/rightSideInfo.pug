@@ -1,0 +1,52 @@
+div(class="right-container")
+  div(class="method" id="getAll")
+    h3 Method
+    div(class="get spacing") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/warriors
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns a list all of the warriors in the database.
+
+  div(class="method hidden" id="getType")
+    h3 Method
+    div(class="spacing get") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/warriors/{typeId}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns a list of all warriors associated with {typeId}.
+
+  div(class="method hidden" id="getWarriorsById")
+    h3 Method
+    div(class="spacing get") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/warriors/{warriorsId}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns the warrior associated with the {warriorsId}.
+
+  div(class="method hidden" id="postWarriors")
+    h3 Method
+    div(class="spacing post") POST
+    h3 Route
+    div(class="spacing") http://localhost:1337/warriors
+    h3 Headers
+    div(class="spacing") Content-Type: application/json
+    h3 Body
+    div(class="spacing") { "type": "hero", "name": "Goku", "race": "Saiyan", "transformation": "yes" }
+    h3 Decription
+    div(class="spacing") Saves a new warrior to the database.
+
+  div(class="method hidden" id="deleteWarriorsById")
+    h3 Method
+    div(class="spacing delete") DELETE
+    h3 Route
+    div(class="spacing") http://localhost:1337/warriors/{warriorsId}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Deletes the warriors associated with the {warriorsId}.
