@@ -4,9 +4,11 @@
   "description": "You will be building a working API and front-end. This is part 1 of 2. Create a new repo in GitHub for your project, make your instructor a collaborator, and clone it locally. Remember to work in and part-one-answer branch, not master In this part of your project you will be building the front-end for your API site. The design and content of your front-end is up to you, the only requirement is that it provide documentation for using the API you will be building Your first progress check with your instructor will be the week of April 19th You should push all progress to GitHub prior to your meeting with the instructor Your graded submission for this part will be due on Thursday April 30th before class",
   "main": "index.js",
   "scripts": {
-    "dev": "./node_modules/.bin/nodemon index.js",
+    "dev": "./node_modules/.bin/env-cmd ./node_modules/.bin/nodemon index.js",
+    "dev:migrate": "./node_modules/.bin/env-cmd ./node_modules/.bin/sequelize db:migrate --env development --config ./config/sequelize.js",
     "lint": "./node_modules/.bin/eslint --format codeframe .",
-    "lint:fix": "./node_modules/.bin/eslint --format codeframe --fix ."
+    "lint:fix": "./node_modules/.bin/eslint --format codeframe --fix .",
+    "test": "./node_modules/.bin/env-cmd ./node_modules/.bin/mocha tests/**/*.tests.js"
   },
   "repository": {
     "type": "git",
@@ -19,15 +21,24 @@
   },
   "homepage": "https://github.com/Ian-Fields/dragon-ball-api#readme",
   "dependencies": {
+    "body-parser": "^1.19.0",
     "express": "^4.17.1",
-    "pug": "^2.0.4"
+    "mysql2": "^2.1.0",
+    "pug": "^2.0.4",
+    "sequelize": "^5.21.10",
+    "sequelize-cli": "^5.5.1"
   },
   "devDependencies": {
+    "chai": "^4.2.0",
+    "env-cmd": "^10.1.0",
     "eslint": "^6.8.0",
     "i": "^0.3.6",
     "lint-fix": "^0.24.0",
-    "nodemon": "^2.0.3",
+    "mocha": "^7.2.0",
+    "nodemon": "^2.0.4",
     "npm": "^6.14.4",
-    "pug-lint": "^2.6.0"
+    "pug-lint": "^2.6.0",
+    "sinon": "^9.0.2",
+    "sinon-chai": "^3.5.0"
   }
 }

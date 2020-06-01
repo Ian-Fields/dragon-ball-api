@@ -162,5 +162,103 @@ const characters = [{
   transformation: 'no',
 }]
 
+// const races = [{
+//   id: 1,
+//   name: 'Saiyan',
+//   charactersId: { 1, 2, 17, 18 },
+// }, {
+//   id: 2,
+//   name: 'Namekian',
+//   charactersId: {},
+// }, {
+//   id: 3,
+//   name: 'Earthing',
+//   charactersId: {},
+// }, {
+//   id: 4,
+//   name: 'Freiza',
+//   charactersId: {},
+// }, {
+//   id: 5,
+//   name: 'Hybrid',
+//   charactersId: {},
+// }, {
+//   id: 6,
+//   name: 'Deity',
+//   charactersId: {},
+// }, {
+//   id: 7,
+//   name: 'Core',
+//   charactersId: {},
+// }, {
+//   id: 8,
+//   name: 'Kaioshin',
+//   charactersId: {},
+// }, {
+//   id: 9,
+//   name: 'Unknown',
+//   charactersId: {},
+// }, {
+//   id: 10,
+//   name: 'Android',
+//   charactersId: {},
+// }, {
+//   id: 11,
+//   name: 'Majinn',
+//   charactersId: 
+// }, {
+//   id: 12,
+//   name: 'Bibidi',
+//   charactersId: {},
+// }, {
+//   id: 13,
+//   name: 'Demon',
+//   charactersId: {},
+// }, {
+//   id: 14,
+//   name: 'Dragon',
+//   charactersId: {},
+// }]
+// 
+// const sagas = [{
+//   id: 1,
+//   name: 'Saiyan',
+// }, {
+//   id: 2,
+//   name: 'Vegeta',
+// }, {
+//   id: 3,
+//   name: 'Namek',
+// }, {
+//   id: 4,
+//   name: 'Ginyu Force',
+// }, {
+//   id: 5,
+//   name: 'Frieza',
+// }, {
+//   id: 6,
+//   name: 'Future Trunks',
+// }, {
+//   id: 7,
+//   name: 'Androids',
+// }, {
+//   id: 8,
+//   name: 'Cell',
+// }, {
+//   id: 9,
+//   name: 'Cell Games',
+// }, {
+//   id: 10,
+//   name: 'World Tournament',
+// }, {
+//   id: 11,
+//   name: 'Babidi & Majin Buu',
+// }, {
+//   id: 12,
+//   name: 'Fusion',
+// }, {
+//   id: 13,
+//   name: 'Kid Buu'
+// }]
 
 module.exports = characters
