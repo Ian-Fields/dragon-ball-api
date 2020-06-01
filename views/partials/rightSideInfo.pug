@@ -1,0 +1,132 @@
+div(class="right-container")
+  div(class="method" id="getAllCharacters")
+    h3 Method
+    div(class="get spacing") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/characters
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns a list all of the characters in the database.
+
+  div(class="method hidden" id="getCharacterById")
+    h3 Method
+    div(class="spacing get") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/characters/{id}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") 
+      | Returns the character associated with the {id}. 
+      | Where the id is the id associated to the character or the name of the character.
+
+  div(class="method hidden" id="saveNewCharacter")
+    h3 Method
+    div(class="spacing post") POST
+    h3 Route
+    div(class="spacing") http://localhost:1337/characters
+    h3 Headers
+    div(class="spacing") Content-Type: application/json
+    h3 Body
+    div(class="spacing") { "name": "Yajirobe", "race": "raceId" "type": "hero", "transformation": "no", "sagas": "Saiyan,Vegeta" }
+    h3 Decription
+    div(class="spacing") Saves a new character to the database.
+
+  div(class="method hidden" id="deleteCharacter")
+    h3 Method
+    div(class="spacing delete") DELETE
+    h3 Route
+    div(class="spacing") http://localhost:1337/characters
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Deletes the character associated with the {name}.
+
+  div(class="method hidden" id="getAllRaces")
+    h3 Method
+    div(class="get spacing") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/races
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns a list all of the races in the database.
+
+  div(class="method hidden" id="getRaceById")
+    h3 Method
+    div(class="spacing get") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/races/{id}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing")
+      | Returns the race associated with the {id}. 
+      | Where the id is the id associated to the race or the name of the race.
+
+  div(class="method hidden" id="saveNewRace")
+    h3 Method
+    div(class="spacing post") POST
+    h3 Route
+    div(class="spacing") http://localhost:1337/races
+    h3 Headers
+    div(class="spacing") Content-Type: application/json
+    h3 Body
+    div(class="spacing") { "name": "Yardrat" }
+    h3 Decription
+    div(class="spacing") Saves a new race to the database.
+
+  div(class="method hidden" id="deleteRace")
+    h3 Method
+    div(class="spacing delete") DELETE
+    h3 Route
+    div(class="spacing") http://localhost:1337/races
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Deletes the race associated with the {name}.
+
+  div(class="method hidden" id="getAllSagas")
+    h3 Method
+    div(class="get spacing") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/sagas
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Returns a list all of the sagas in the database.
+
+  div(class="method hidden" id="getSagaById")
+    h3 Method
+    div(class="spacing get") GET
+    h3 Route
+    div(class="spacing") http://localhost:1337/sagas/{id}
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing")
+      | Returns the saga associated with the {id}. 
+      | Where the id is the id associated to the saga or the name of the saga.
+
+  div(class="method hidden" id="saveNewSaga")
+    h3 Method
+    div(class="spacing post") POST
+    h3 Route
+    div(class="spacing") http://localhost:1337/sagas
+    h3 Headers
+    div(class="spacing") Content-Type: application/json
+    h3 Body
+    div(class="spacing") { "name": "Garlic Jr." }
+    h3 Decription
+    div(class="spacing") Saves a new saga to the database.
+
+  div(class="method hidden" id="deleteSaga")
+    h3 Method
+    div(class="spacing delete") DELETE
+    h3 Route
+    div(class="spacing") http://localhost:1337/sagas
+    h3 Headers
+    div(class="spacing") Nothing
+    h3 Decription
+    div(class="spacing") Deletes the saga associated with the {name}.

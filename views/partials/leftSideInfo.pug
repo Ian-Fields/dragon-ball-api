@@ -1,0 +1,48 @@
+div(class="left-container")
+  div(class="tabs highlighted" id="getAllCharacters" onclick="updateSelected('getAllCharacters')")
+    span(class="get") GET
+    span /characters
+
+  div(class="tabs" id="getCharacterById" onclick="updateSelected('getCharacterById')")
+    span(class="get") GET
+    span /characters/{characterId}
+
+  div(class="tabs" id="saveNewCharacter" onclick="updateSelected('saveNewCharacter')")
+    span(class="post") POST
+    span /characters
+
+  div(class="tabs" id="deleteCharacter" onclick="updateSelected('deleteCharacter')")
+    span(class="delete") DELETE
+    span /characters
+
+  div(class="tabs" id="getAllRaces" onclick="updateSelected('getAllRaces')")
+    span(class="get") GET
+    span /races
+
+  div(class="tabs" id="getRaceById" onclick="updateSelected('getRaceById')")
+    span(class="get") GET
+    span /races/{raceId}
+
+  div(class="tabs" id="saveNewRace" onclick="updateSelected('saveNewRace')")
+    span(class="post") POST
+    span /races
+
+  div(class="tabs" id="deleteRace" onclick="updateSelected('deleteRace')")
+    span(class="delete") DELETE
+    span /races
+
+  div(class="tabs" id="getAllSagas" onclick="updateSelected('getAllSagas')")
+    span(class="get") GET
+    span /sagas
+
+  div(class="tabs" id="getSagaById" onclick="updateSelected('getSagaById')")
+    span(class="get") GET
+    span /sagas/{sagaId}
+
+  div(class="tabs" id="saveNewSaga" onclick="updateSelected('saveNewSaga')")
+    span(class="post") POST
+    span /sagas
+
+  div(class="tabs" id="deleteSaga" onclick="updateSelected('deleteSaga')")
+    span(class="delete") DELETE
+    span /sagas
